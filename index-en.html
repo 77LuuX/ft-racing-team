@@ -56,12 +56,9 @@
       line-height: 1.6;
       color: #d0d0d0;
     }
-    footer {
-      font-size: 0.8rem;
-      color: #888;
-      text-align: center;
-      margin-top: auto;
-      padding: 1rem 0;
+    .simulators img {
+      height: 60px;
+      margin: 1rem;
     }
     form {
       display: flex;
@@ -69,7 +66,7 @@
       gap: 1rem;
       max-width: 500px;
       width: 100%;
-      margin: auto;
+      margin: 2rem auto;
     }
     input, textarea, button {
       padding: 0.8rem;
@@ -89,6 +86,13 @@
     button:hover {
       background-color: #e32e2e;
     }
+    footer {
+      font-size: 0.8rem;
+      color: #888;
+      text-align: center;
+      margin-top: auto;
+      padding: 1rem 0;
+    }
   </style>
 </head>
 <body>
@@ -103,8 +107,28 @@
   </header>
 
   <section data-aos="fade-up">
+    <h2>About Us</h2>
+    <p>We are <strong>FT Racing Team</strong>, a Latin American SimRacing team recently founded with a deep passion for speed and teamwork. Although we're just starting out, we're driven by enthusiasm and a love for virtual motorsport.</p>
+  </section>
+
+  <section data-aos="fade-up" data-aos-delay="150">
+    <h2>Our Goals</h2>
+    <p>To compete, learn, improve, and most importantly, enjoy the ride. We aim to grow as a community, bring in drivers who are eager to race, and proudly represent our region in the world of SimRacing.</p>
+  </section>
+
+ <section data-aos="fade-up" data-aos-delay="250">
+    <h2>Simulators</h2>
+    <p>We race on the most recognized simulation platforms:</p>
+    <div class="simulators">
+      <img src="iracing-logo.png" alt="iRacing">
+      <img src="assetto-corsa-logo.png" alt="Assetto Corsa">
+      <img src="acc-logo.png" alt="Assetto Corsa Competizione">
+    </div>
+  </section>
+  
+  <section data-aos="fade-up" data-aos-delay="200">
     <h2>Contact</h2>
-    <form action="https://formspree.io/f/mwpbpaav" method="POST">
+    <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
       <input type="text" name="name" placeholder="Your name" required>
       <input type="email" name="email" placeholder="Your email" required>
       <textarea name="message" placeholder="Write your message" rows="5" required></textarea>
@@ -112,7 +136,7 @@
     </form>
   </section>
 
-  <footer data-aos="fade-up">
+  <footer data-aos="fade-up" data-aos-delay="300">
     &copy; 2025 FT Racing Team. All rights reserved.
   </footer>
 
