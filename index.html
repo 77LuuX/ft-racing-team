@@ -4,73 +4,94 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FT Racing Team</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0f1a2b;
-      color: #ffffff;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Poppins', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-
-    header {
+      justify-content: flex-start;
+      min-height: 100vh;
       padding: 2rem;
-      text-align: center;
     }
 
     header img {
-      max-width: 300px;
+      max-width: 250px;
       height: auto;
+      margin-bottom: 1rem;
     }
 
     h1 {
-      margin-top: 1rem;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      font-weight: 600;
       color: #ffffff;
+      margin-bottom: 2rem;
+      text-align: center;
     }
 
     section {
       max-width: 800px;
-      padding: 2rem;
       text-align: center;
+      margin-bottom: 3rem;
     }
 
     section h2 {
-      color: #ff2e2e;
+      font-size: 1.8rem;
+      color: #ff3c3c;
       margin-bottom: 1rem;
     }
 
-    footer {
-      padding: 1rem;
-      color: #aaa;
-      font-size: 0.9rem;
+    section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #d0d0d0;
     }
 
-    .highlight {
-      color: #ff2e2e;
+    footer {
+      font-size: 0.8rem;
+      color: #888;
+      text-align: center;
+      margin-top: auto;
+      padding: 1rem 0;
     }
   </style>
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down">
     <img src="ft-logo.png" alt="Logo FT Racing Team">
     <h1>FT Racing Team</h1>
   </header>
 
-  <section>
+  <section data-aos="fade-up">
     <h2>Sobre Nosotros</h2>
-    <p>Somos <span class="highlight">FT Racing Team</span>, un equipo latinoamericano de SimRacing recién formado con mucha pasión por la velocidad y el trabajo en equipo. Aunque estamos dando nuestros primeros pasos, nos mueve el entusiasmo y el amor por el automovilismo virtual.</p>
+    <p>Somos <strong>FT Racing Team</strong>, un equipo latinoamericano de SimRacing recién formado con mucha pasión por la velocidad y el trabajo en equipo. Aunque estamos dando nuestros primeros pasos, nos mueve el entusiasmo y el amor por el automovilismo virtual.</p>
   </section>
 
-  <section>
+  <section data-aos="fade-up" data-aos-delay="150">
     <h2>Nuestros Objetivos</h2>
     <p>Competir, aprender, mejorar y sobre todo disfrutar. Queremos crecer como comunidad, sumar pilotos con ganas de correr y representar con orgullo a nuestra región en el mundo del SimRacing.</p>
   </section>
 
-  <footer>
+  <footer data-aos="fade-up" data-aos-delay="300">
     &copy; 2025 FT Racing Team. Todos los derechos reservados.
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
 </body>
 </html>
