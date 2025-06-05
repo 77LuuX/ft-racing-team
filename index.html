@@ -65,6 +65,11 @@
       font-size: 1rem;
       line-height: 1.6;
       color: #d0d0d0;
+      transition: transform 0.3s, color 0.3s;
+    }
+    section p:hover {
+      transform: scale(1.03);
+      color: #ffffff;
     }
     .simulators img {
       height: 75px;
@@ -72,6 +77,11 @@
       padding: 0.7rem;
       background-color: #ffffff;
       border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .simulators img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255, 60, 60, 0.4);
     }
     form {
       display: flex;
