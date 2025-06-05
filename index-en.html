@@ -19,12 +19,12 @@
       min-height: 100vh;
       padding: 2rem;
     }
-    .traductor {
+    .translator {
       position: absolute;
       top: 1rem;
       right: 1rem;
     }
-    .bandera {
+    .flag {
       width: 28px;
       height: auto;
       margin-left: 8px;
@@ -42,14 +42,7 @@
       transition: transform 0.3s ease;
     }
     header img:hover {
-        transform: scale(1.2);
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      color: #ffffff;
-      margin-bottom: 2rem;
-      text-align: center;
+      transform: scale(1.2);
     }
     section {
       max-width: 800px;
@@ -65,6 +58,11 @@
       font-size: 1rem;
       line-height: 1.6;
       color: #d0d0d0;
+      transition: transform 0.3s, color 0.3s;
+    }
+    section p:hover {
+      transform: scale(1.1);
+      color: #ffffff;
     }
     .simulators img {
       height: 75px;
@@ -72,6 +70,11 @@
       padding: 0.7rem;
       background-color: #ffffff;
       border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .simulators img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255, 60, 60, 0.4);
     }
     form {
       display: flex;
@@ -109,9 +112,9 @@
   </style>
 </head>
 <body>
-  <div class="traductor">
-    <a href="index.html"><img src="es-trad.png" alt="Español" class="bandera"></a>
-    <a href="index-en.html"><img src="en-trad.png" alt="English" class="bandera"></a>
+  <div class="translator">
+    <a href="index.html"><img src="es-trad.png" alt="Spanish" class="flag"></a>
+    <a href="index-en.html"><img src="en-trad.png" alt="English" class="flag"></a>
   </div>
 
   <header data-aos="fade-down">
@@ -120,17 +123,17 @@
 
   <section data-aos="fade-up">
     <h2>About Us</h2>
-    <p>We are <strong>FT Racing Team</strong>, a Latin American SimRacing team recently formed with a deep passion for speed and teamwork. Although we're just starting out, we're driven by enthusiasm and a love for virtual motorsports.</p>
+    <p>We are <strong>FT Racing Team</strong>, a Latin American SimRacing team recently formed with a strong passion for speed and teamwork. Even though we're just getting started, we're driven by enthusiasm and a love for virtual motorsport.</p>
   </section>
 
   <section data-aos="fade-up" data-aos-delay="150">
     <h2>Our Goals</h2>
-    <p>To compete, learn, improve, and most importantly, enjoy it. We aim to grow as a community, welcome drivers eager to race, and proudly represent our region in the world of SimRacing.</p>
+    <p>To compete, learn, improve and, most of all, enjoy. We aim to grow as a community, welcome new passionate drivers, and proudly represent our region in the world of SimRacing.</p>
   </section>
 
   <section data-aos="fade-up" data-aos-delay="250">
     <h2>Simulators</h2>
-    <p>We race in the top sim racing platforms:</p>
+    <p>We compete in the most popular racing simulators:</p>
     <div class="simulators">
       <img src="iracing-logo.png" alt="iRacing">
       <img src="assetto-corsa-logo.png" alt="Assetto Corsa">
