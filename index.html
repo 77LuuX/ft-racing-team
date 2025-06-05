@@ -30,16 +30,14 @@
       margin-bottom: 2rem;
       text-align: center;
     }
-    .language-switcher {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
+    nav {
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
     }
-    .language-switcher img {
-      width: 30px;
-      height: 20px;
-      margin: 0 5px;
-      cursor: pointer;
+    nav a {
+      color: #ff3c3c;
+      margin: 0 0.5rem;
+      text-decoration: none;
     }
     section {
       max-width: 800px;
@@ -56,12 +54,9 @@
       line-height: 1.6;
       color: #d0d0d0;
     }
-    footer {
-      font-size: 0.8rem;
-      color: #888;
-      text-align: center;
-      margin-top: auto;
-      padding: 1rem 0;
+    .simulators img {
+      height: 60px;
+      margin: 1rem;
     }
     form {
       display: flex;
@@ -69,7 +64,7 @@
       gap: 1rem;
       max-width: 500px;
       width: 100%;
-      margin: auto;
+      margin: 2rem auto;
     }
     input, textarea, button {
       padding: 0.8rem;
@@ -89,13 +84,19 @@
     button:hover {
       background-color: #e32e2e;
     }
+    footer {
+      font-size: 0.8rem;
+      color: #888;
+      text-align: center;
+      margin-top: auto;
+      padding: 1rem 0;
+    }
   </style>
 </head>
 <body>
-  <div class="language-switcher">
-    <a href="index.html"><img src="es-flag.png" alt="Español"></a>
-    <a href="index-en.html"><img src="us-flag.png" alt="English"></a>
-  </div>
+  <nav>
+    <a href="index.html">🇪🇸</a> | <a href="index-en.html">🇺🇸</a>
+  </nav>
 
   <header data-aos="fade-down">
     <img src="ft-logo.png" alt="Logo FT Racing Team">
@@ -103,6 +104,16 @@
   </header>
 
   <section data-aos="fade-up">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos <strong>FT Racing Team</strong>, un equipo latinoamericano de SimRacing recién formado con mucha pasión por la velocidad y el trabajo en equipo. Aunque estamos dando nuestros primeros pasos, nos mueve el entusiasmo y el amor por el automovilismo virtual.</p>
+  </section>
+
+  <section data-aos="fade-up" data-aos-delay="150">
+    <h2>Nuestros Objetivos</h2>
+    <p>Competir, aprender, mejorar y sobre todo disfrutar. Queremos crecer como comunidad, sumar pilotos con ganas de correr y representar con orgullo a nuestra región en el mundo del SimRacing.</p>
+  </section>
+
+  <section data-aos="fade-up" data-aos-delay="200">
     <h2>Contacto</h2>
     <form action="https://formspree.io/f/mwpbpaav" method="POST">
       <input type="text" name="nombre" placeholder="Tu nombre" required>
@@ -112,7 +123,17 @@
     </form>
   </section>
 
-  <footer data-aos="fade-up">
+  <section data-aos="fade-up" data-aos-delay="250">
+    <h2>Simuladores</h2>
+    <p>Competimos en los principales simuladores de carreras:</p>
+    <div class="simulators">
+      <img src="iracing-logo.png" alt="iRacing">
+      <img src="assetto-corsa-logo.png" alt="Assetto Corsa">
+      <img src="acc-logo.png" alt="Assetto Corsa Competizione">
+    </div>
+  </section>
+
+  <footer data-aos="fade-up" data-aos-delay="300">
     &copy; 2025 FT Racing Team. Todos los derechos reservados.
   </footer>
 
